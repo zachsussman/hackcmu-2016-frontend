@@ -1,10 +1,21 @@
-<div class="row">
-  <div class="col-xs-12">
-    {{#link-to "events.new" class="btn btn-success" href="#" role="button"}}New Event{{/link-to}}
+<div class="events-topbar">
+  <div class="row">
+    <div class="col-xs-10">
+      <div class="vertical-center logo-bar">
+        <img src="logo white.png" height="50px">
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="vertical-center">
+        <div>
+          {{#link-to "events.new" class="btn btn-new-event" href="#" role="button"}}
+            <i class="fa fa-plus-circle" aria-hidden="true"></i> New Event
+          {{/link-to}}
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-
-<hr>
 
 <div class="events-outlet scrollable-menu">
   {{liquid-outlet}}
