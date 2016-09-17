@@ -118,7 +118,7 @@ export default Ember.Controller.extend({
       name: 'Ultimate Frisbee Pickup on the Cut',
       description: '',
       time: 'Sunday, September 18 at 1pm',
-      location: 'Meet at the Fense',
+      location: 'Meet at the fence',
       id: 8,
       interests: [9, 8, 10, 13],
       attendees: [4, 7, 9],
