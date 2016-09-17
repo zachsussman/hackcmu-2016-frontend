@@ -20,39 +20,38 @@ export default Ember.Controller.extend({
   ],
   events: [
     {
+      name: 'HackCMU',
+      description: 'HackCMU is a 24-hour event where students from across campus come together to make something awesome — like an app, website or hardware hack. “Don’t let your dreams be memes”',
+      time: 'Friday, September 16 at 5:00pm - Saturday, September 17 at 7:30pm',
+      location: 'Rashid Auditorium, 4th Floor, Gates, Carnegie Mellon University',
+      id: 0,
+      interests: [6, 7, 8, 10, 14, 3],
+      attendees: [5, 7, 8],
+      owner: 5,
+      going: 200
+    },
+    {
+      name: '15-151 Office Hours',
+      description: '',
+      time: 'All day, every day',
+      location: 'Wean 7130',
+      id: 1,
+      interests: [1, 5, 12, 14],
+      attendees: [0, 5, 7, 8],
+      owner: 0,
+      going: 300
+    },
+
+    {
       name: 'Party at UPitt',
       description: '',
       time: 'Saturday, September 17 at 10:00pm - 11:59pm',
       location: 'Meet at Cathy',
-      id: 0,
+      id: 2,
       interests: [1, 3],
       attendees: [5, 7, 8],
       owner: 5,
       going: 70
-    },
-
-    {
-      name: '15-112 (Save me) hacking homework group',
-      description: '',
-      time: 'Saturday, September 17 at 12am',
-      location: 'Hunt Library, Basement Computer Cluster',
-      id: 1,
-      interests: [1, 4, 6, 11, 12],
-      attendees: [4, 7, 9],
-      owner: 5,
-      going: 10
-    },
-
-    {
-      name: 'Ultimate Frisbee Pickup on the Cut',
-      description: '',
-      time: 'Sunday, September 18 at 1pm',
-      location: 'Meet at the Fense',
-      id: 2,
-      interests: [9, 8, 10, 13],
-      attendees: [4, 7, 9],
-      owner: 5,
-      going: 14
     },
 
     {
@@ -86,8 +85,8 @@ export default Ember.Controller.extend({
       location: 'UC, McConomy Auditorium',
       id: 5,
       interests: [1, 6, 12],
-      attendees: [4, 7, 9],
-      owner: 5,
+      attendees: [1, 4, 7, 9],
+      owner: 1,
       going: 110
     },
 
@@ -102,16 +101,29 @@ export default Ember.Controller.extend({
       owner: 5,
       going: 103
     },
+
     {
-      name: 'HackCMU',
-      description: 'HackCMU is a 24-hour event where students from across campus come together to make something awesome — like an app, website or hardware hack. “Don’t let your dreams be memes”',
-      time: 'Friday, September 16 at 5:00pm - Saturday, September 17 at 7:30pm',
-      location: 'Rashid Auditorium, 4th Floor, Gates, Carnegie Mellon University',
+      name: '15-112 (Save me) hacking homework group',
+      description: '',
+      time: 'Saturday, September 17 at 12am',
+      location: 'Hunt Library, Basement Computer Cluster',
       id: 7,
-      interests: [6, 7, 8, 10, 14, 3],
-      attendees: [5, 7, 8],
+      interests: [1, 4, 6, 11, 12],
+      attendees: [4, 7, 9],
       owner: 5,
-      going: 200
+      going: 10
+    },
+
+    {
+      name: 'Ultimate Frisbee Pickup on the Cut',
+      description: '',
+      time: 'Sunday, September 18 at 1pm',
+      location: 'Meet at the Fense',
+      id: 8,
+      interests: [9, 8, 10, 13],
+      attendees: [4, 7, 9],
+      owner: 5,
+      going: 14
     }
   ],
 });

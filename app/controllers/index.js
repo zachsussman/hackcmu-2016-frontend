@@ -2,8 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   users: [
-    { pid: 0, name: 'Zach Sussman', email: 'zsussman@andrew.cmu.edu', interests: [0, 4, 10, 11, 14]},
-    { pid: 1, name: 'Jake Olkin', email: 'jolkin@andrew.cmu.edu', interests: [1, 5, 7]}
+    { pid: 0, name: 'John Mackey', email: 'jmackey', interests: [0, 4, 10, 11, 14]},
+    { pid: 1, name: 'Clive Newstead', email: 'the_clive_conjecture', interests: [1, 5, 7, 12]}
   ],
 
   currentUser: 1,
