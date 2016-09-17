@@ -7,7 +7,7 @@ export default Ember.Route.extend({
     let user = this.controllerFor('events').model;
     if (!this.get('e')) {
       // this.set('e', this.store.createRecord('event'));
-      this.set('e', {name: '', location: '', time: '', description: '', interests: [], attendees: [user.pid], owner: user.pid});
+      this.set('e', {name: '', location: '', time: '', description: '', going: 1, interests: [], attendees: [user.pid], owner: user.pid});
     }
     return this.get('e');
   },
