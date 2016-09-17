@@ -1,0 +1,30 @@
+<div class="col-lg-3 col-md-4 col-xs-6">
+  <div class="event-item">
+    <div class="event-item-inner">
+      <div class="row event-item-name">
+        <div class="col-xs-12">
+          <div class="event-item-name">{{event.name}}</div>
+        </div>
+      </div>
+      <div class="row event-item-location">
+        <div class="col-xs-12">
+          {{event.location}}
+        </div>
+      </div>
+      <div class="row event-item-time">
+        <div class="col-xs-12">
+          {{event.time}}
+        </div>
+      </div>
+    </div>
+    {{#link-to "events.event" event}}
+      <div class="row event-item-view">
+        <div class="col-xs-12">
+          <div class="event-lower-bar">View Details</div>
+        </div>
+      </div>
+    {{/link-to}}
+  </div>
+</div>
+
+{{yield}}

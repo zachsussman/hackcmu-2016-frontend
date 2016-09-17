@@ -1,0 +1,152 @@
+<style>
+
+html, body{
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background-image: url("background.svg");
+  font-family: "Open Sans", "Helvetica", "Arial", "Sans Serif";
+}
+
+.index-topbar {
+  width: 100%;
+  height: 15vh;
+  background-color: #008CDD;
+}
+
+.index-descbar {
+  width: 100%;
+  height: 25vh;
+  background-color: #F8F8F8;
+  font-size: 18pt;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.index-description {
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+}
+
+.sign-up-box{
+  height: 60vh;
+  width: 50%;
+  float: left;
+  background-color: #012B4D;
+}
+
+.form-box {
+  height: 60vh;
+  width: 50%;
+  float: right;
+  background-color: #011627;
+}
+
+
+.logo {
+  font-size: 18pt;
+  margin-left: 4%;
+}
+
+.sign-up-desc {
+  font-size: 36pt;
+  color: white;
+}
+
+.are-udown {
+  font-size: 15pt;
+}
+
+.sign-up-form {
+  width: 75%;
+}
+
+input[type="text"] {
+  background-color: #012B4D;
+  color: #008CDD;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: #008CDD;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #008CDD;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #008CDD;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #008CDD;
+  opacity: 1;
+}
+
+.btn-mine {
+  background-color: #008CDD;
+  color: white;
+  font-size: 24px;
+  width: 100%;
+}
+
+.btn-mine:hover {
+  background-color: #007CCC;
+  color: white;
+}
+
+</style>
+
+<div class="index-topbar">
+  <div class="vertical-center">
+    <div class="logo">
+      <img src="logo white.png" height="100px">
+    </div>
+  </div>
+</div>
+
+<div class="index-descbar">
+  <div class="index-description">
+    Are you interested in getting off campus or doing something cool? <br>UDown connects you to events in your area based on your interests.<br> We just have one final question.
+    <br><span style="font-size:24pt">Are <img src="logo dark blue.svg" height="80px">?</span>
+  </div>
+</div>
+
+<div class="index-body">
+  <div class="sign-up-box">
+    <div class="vertical-center horizontal-center">
+      <div class="sign-up-desc">
+        <img src="logo white.png" height="80px"> for <img src="logo white.png" height="80px">?  Sign up!
+      </div>
+    </div>
+  </div>
+
+  <div class="form-box">
+    <div class="vertical-center horizontal-center">
+      <form class="sign-up-form">
+        <div class="form-group">
+          <div class="row">
+            <div class="col-xs-6">
+              {{input class="form-control" value=model.firstname placeholder="First name"}}
+            </div>
+            <div class="col-xs-6">
+              {{input class="form-control" value=model.lastname placeholder="Last name"}}
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          {{input class="form-control" value=model.email placeholder="Email"}}
+        </div>
+        <div class="form-group">
+          {{input class="form-control" value=model.password placeholder="Password"}}
+        </div>
+        <div class="form-group">
+          <button class="btn btn-mine">Sign <img src="logo white.png" height="50px"></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+{{outlet}}

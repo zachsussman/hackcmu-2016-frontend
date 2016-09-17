@@ -1,0 +1,35 @@
+.event-item {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  background-color: #F8F8F8;
+}
+
+.event-item-inner {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+
+.event-item-name {
+  font-weight: bold;
+  font-size: 14pt;
+  margin-bottom: 10px;
+}
+
+.event-item-location, .event-item-time{
+  margin-bottom: 10px;
+}
+
+.event-lower-bar {
+  text-align: center;
+  color: white;
+  background-color: #008CDD;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

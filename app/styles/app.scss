@@ -1,0 +1,26 @@
+@import "event-item.scss";
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.udown-logo {
+  font-style: Audiowide;
+}
+
+.vertical-center {
+  height: 100%;
+  display:flex;
+  align-items:center;
+}
+
+.events-list {
+  background-color: #D9D9D9;
+}
+
+.horizontal-center {
+  text-align: center;
+  justify-content: center;
+}
