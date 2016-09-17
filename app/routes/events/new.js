@@ -1,8 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  e: null,
   model () {
-    return {name: '', description: '', location: '', time: ''};
+    if (!this.get('e')) {
+      this.set('e', this.store.createRecord('event'));
+    }
+    return this.get('e');
   },
   actions: {
     submit() {
