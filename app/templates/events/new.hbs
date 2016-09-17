@@ -1,37 +1,45 @@
+<div class="col-xs-12">
+  <div class="event-detail">
+    <div class="event-detail-top">
+          <div class="event-detail-escape">
+            {{#link-to "events"}}<i class="fa fa-times fa-2x" aria-hidden="true"></i> {{/link-to}}
+          </div>
+    </div>
 
-<form style="margin: 30px">
-  <div class="form-group">
-    <h1> Create new event </h1>
+
+    <div class="event-detail-main">
+
+
+      <form>
+        <div class="form-group">
+          {{input class="form-control" placeholder="What? (Brief tagline of event)" id="name" value=model.name}}
+        </div>
+
+        <div class="form-group">
+          {{input class="form-control" placeholder="When? (Dates and times)" id="time" value=model.name}}
+        </div>
+
+        <div class="form-group">
+          {{input class="form-control" placeholder="Where? (Specific location)" id="location" value=model.name}}
+        </div>
+
+        <div class="form-group">
+          {{textarea class="form-control textarea-override" placeholder="More about the event" rows=3 id="description" value=model.description}}
+        </div>
+
+        <div class="form-group">
+          <div class="event-detail-sign">
+            <button type="submit" class="btn btn-event-detail" {{action "submit"}}>Create event</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="event-detail-bottom">
+    </div>
+
   </div>
-
-  <div class="form-group">
-    <label for="name">Name</label>
-    {{input class="form-control" placeholder="Name" id="name" value=model.name}}
-  </div>
-
-
-  <div class="form-group">
-    <label for="location">Location</label>
-    {{input class="form-control" placeholder="Location" id="location" value=model.name}}
-  </div>
-
-
-  <div class="form-group">
-    <label for="time">Time</label>
-    {{input class="form-control" placeholder="Time" id="time" value=model.name}}
-  </div>
-
-
-  <div class="form-group">
-    <label for="description">Description:</label>
-    {{textarea class="form-control" rows=3 id="description" value=model.description}}
-  </div>
-
-  <div class="form-group">
-    <button type="submit" class="btn btn-success" {{action "submit"}}>Create event</button>
-    <button type="cancel" class="btn btn-danger" {{action "cancel"}}>Cancel</button>
-  </div>
-</form>
+</div>
 
 
 {{liquid-outlet}}
