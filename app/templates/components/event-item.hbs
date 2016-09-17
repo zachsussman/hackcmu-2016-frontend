@@ -6,7 +6,7 @@
         <div class="col-xs-12">
           <div class="event-item-name">
             {{event.name}}
-            {{#if going}}<i style="color: green" class="fa fa-check" aria-hidden="true"></i>{{/if}}
+            {{#if amGoing}}<i style="color: green" class="fa fa-check" aria-hidden="true"></i>{{/if}}
           </div>
         </div>
       </div>
@@ -22,7 +22,7 @@
       </div>
       <div class="row event-item-time">
         <div class="col-xs-12">
-          {{attendeeNumber}} going
+          {{event.going}} going
         </div>
       </div>
     </div>

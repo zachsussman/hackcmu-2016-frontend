@@ -2,22 +2,116 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   interests: [
-    {name: 'Technology', iid: 1},
-    {name: 'Arts', iid: 2},
-    {name: 'Science', iid: 3},
-    {name: 'Adventure', iid: 4}
+    {name: 'Studying', iid: 0},
+    {name: 'Partying', iid: 1},
+    {name: 'Laser Tag', iid: 2},
+    {name: 'Eating', iid: 3},
+    {name: 'Learning', iid: 4},
+    {name: 'Movies', iid: 5},
+    {name: 'Coding', iid: 6},
+    {name: 'Designing', iid: 7},
+    {name: 'Playing', iid: 8},
+    {name: 'Frisbee', iid: 9},
+    {name: 'Not Studying', iid: 10},
+    {name: 'Group Work', iid: 11},
+    {name: 'Learning', iid: 12},
+    {name: 'Sports', iid: 13},
+    {name: 'Not Sleeping', iid: 14}
   ],
   events: [
-    {name: 'A', description: 'About A', time: 'Time of A', location: 'A\'s location', id: 0, interests: [0], attendees: [5], owner: 5},
-    {name: 'B', description: 'About B', time: 'Time of B', location: 'B\'s location', id: 1, interests: [1, 3], attendees: [4], owner:4},
-    {name: 'C', description: 'About C', time: 'Time of C', location: 'C\'s location', id: 2, interests: [3], attendees: [1], owner: 1},
-    {name: 'D', description: 'About D', time: 'Time of D', location: 'D\'s location', id: 3, interests: [2], attendees: [0], owner: 0},
-    {name: 'E', description: 'About E', time: 'Time of E', location: 'E\'s location', id: 4, interests: [0, 1], attendees: [1], owner: 1},
-    {name: 'F', description: 'About F', time: 'Time of F', location: 'F\'s location', id: 5, interests: [0, 1, 2, 3], attendees: [0], owner: 0},
-    {name: 'G', description: 'About G', time: 'Time of G', location: 'G\'s location', id: 6, interests: [1, 3], attendees: [4], owner: 4},
-    {name: 'H', description: 'About H', time: 'Time of H', location: 'H\'s location', id: 7, interests: [1, 2], attendees: [3], owner: 3},
-    {name: 'I', description: 'About I', time: 'Time of I', location: 'I\'s location', id: 8, interests: [0, 1], attendees: [2], owner: 2},
-    {name: 'J', description: 'About J', time: 'Time of J', location: 'J\'s location', id: 9, interests: [1, 2], attendees: [6], owner: 6},
-    {name: 'K', description: 'About K', time: 'Time of K', location: 'K\'s location', id: 10, interests: [1, 3], attendees: [8], owner: 8},
+    {
+      name: 'Party at UPitt',
+      description: '',
+      time: 'Saturday, September 17 at 10:00pm - 11:59pm',
+      location: 'Meet at Cathy',
+      id: 0,
+      interests: [1, 3],
+      attendees: [5, 7, 8],
+      owner: 5,
+      going: 70
+    },
+
+    {
+      name: '15-112 (Save me) hacking homework group',
+      description: '',
+      time: 'Saturday, September 17 at 12am',
+      location: 'Hunt Library, Basement Computer Cluster',
+      id: 1,
+      interests: [1, 4, 6, 11, 12],
+      attendees: [4, 7, 9],
+      owner: 5,
+      going: 10
+    },
+
+    {
+      name: 'Ultimate Frisbee Pickup on the Cut',
+      description: '',
+      time: 'Sunday, September 18 at 1pm',
+      location: 'Meet at the Fense',
+      id: 2,
+      interests: [9, 8, 10, 13],
+      attendees: [4, 7, 9],
+      owner: 5,
+      going: 14
+    },
+
+    {
+      name: 'James Bond Laser Tag',
+      description: '',
+      time: 'Saturday, September 17 at 10pm',
+      location: 'Meet at the UC atrium',
+      id: 3,
+      interests: [2, 1, 8, 10, 13],
+      attendees: [4, 7, 9],
+      owner: 5,
+      going: 60
+    },
+
+    {
+      name: 'Visit the Point and get Milkshakes',
+      description: '',
+      time: 'Saturday, September 24 at 6pm',
+      location: 'Bus stop on Forbes',
+      id: 4,
+      interests: [1, 3, 9, 8, 10],
+      attendees: [4, 7, 9],
+      owner: 5,
+      going: 21
+    },
+
+    {
+      name: 'Duo Security Workshop',
+      description: '',
+      time: 'Monday, September 19 at 6:30pm',
+      location: 'UC, McConomy Auditorium',
+      id: 5,
+      interests: [1, 6, 12],
+      attendees: [4, 7, 9],
+      owner: 5,
+      going: 110
+    },
+
+    {
+      name: 'Google “The Internship” Movie',
+      description: '',
+      time: 'Sunday, September 25 at 8pm',
+      location: 'Loews Theater Waterfront',
+      id: 6,
+      interests: [1, 6, 12],
+      attendees: [4, 7, 9],
+      owner: 5,
+      going: 103
+    },
+    {
+      name: 'HackCMU',
+      description: 'HackCMU is a 24-hour event where students from across campus come together to make something awesome — like an app, website or hardware hack. “Don’t let your dreams be memes”',
+      time: 'Friday, September 16 at 5:00pm - Saturday, September 17 at 7:30pm',
+      location: 'Rashid Auditorium, 4th Floor, Gates, Carnegie Mellon University',
+      id: 7,
+      interests: [6, 7, 8, 10, 14, 3],
+      attendees: [5, 7, 8],
+      owner: 5,
+      going: 200
+    }
   ],
 });

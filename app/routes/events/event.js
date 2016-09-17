@@ -18,7 +18,7 @@ export default Ember.Route.extend({
     }
     event.interestNames = is.join(', ');
 
-    event.going = event.attendees.contains(this.controllerFor('events').model.pid);
+    Ember.set(event, 'amGoing', event.attendees.contains(this.controllerFor('events').model.pid));
 
     return event;
   },
@@ -26,6 +26,7 @@ export default Ember.Route.extend({
   actions: {
     signdown() {
       this.controllerFor(this.routeName).model.attendees.pushObject(this.controllerFor('events').model.pid);
+      this.controllerFor(this.routeName).model.going += 1;
       this.transitionTo('events');
     }
   }
