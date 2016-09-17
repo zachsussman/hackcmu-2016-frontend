@@ -1,26 +1,25 @@
 <div class={{cls}}>
-  <div class="event-item">
+  <div class="my-event-item">
     {{#link-to "events.event" event.id}}
-    <div class="event-item-inner">
+    <div class="my-event-item-inner">
       <div class="row event-item-name">
         <div class="col-xs-12">
           <div class="event-item-name">
             {{event.name}}
-            {{#if going}}<i style="color: green" class="fa fa-check" aria-hidden="true"></i>{{/if}}
           </div>
         </div>
       </div>
-      <div class="row event-item-location">
+      <div class="row my-event-item-val">
         <div class="col-xs-12">
           {{event.location}}
         </div>
       </div>
-      <div class="row event-item-time">
+      <div class="row my-event-item-val">
         <div class="col-xs-12">
           {{event.time}}
         </div>
       </div>
-      <div class="row event-item-time">
+      <div class="row my-event-item-val">
         <div class="col-xs-12">
           {{attendeeNumber}} going
         </div>
@@ -29,12 +28,11 @@
 
     <div class="row event-item-view">
       <div class="col-xs-12">
-        <div class="event-lower-bar">View Details</div>
+        <div class="my-event-lower-bar"></div>
       </div>
     </div>
     {{/link-to}}
   </div>
 </div>
-
 
 {{yield}}

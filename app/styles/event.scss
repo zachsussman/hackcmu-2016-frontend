@@ -46,15 +46,28 @@
   padding-bottom: 20px;
 }
 
+.btn-event-detail .btn-event-disabled {
+  width: 40%;
+  font-size: 20pt;
+}
+
 .btn-event-detail {
-  width: 50%;
   background-color: #008CDD;
-  font-size: 18px;
   color: white;
 }
 
 .btn-event-detail:hover {
   background-color: #007CCC;
+  color: white;
+}
+
+.btn-event-disabled {
+  background-color: #333333;
+  color: white;
+}
+
+.btn-event-disabled:hover {
+  background-color: #333333;
   color: white;
 }
 

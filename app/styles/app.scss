@@ -1,5 +1,18 @@
+$ember-power-select-background-color: #e4e4e4;
+$ember-power-select-multiple-selection-background-color: #012B4D;
+
+$ember-power-select-text-color: #008CDD;
+$ember-power-select-placeholder-color: #008CDD;
+$ember-power-select-highlighted-color: #008CDD;
+$ember-power-select-disabled-option-color:#008CDD;
+$ember-power-select-multiple-selection-color: #008CDD;
+
+@import "ember-power-select";
 @import "event-item.scss";
 @import "event.scss";
+@import "login.scss";
+@import "events.scss";
+@import "me.scss";
 
 html, body {
   overflow: hidden;
@@ -19,13 +32,6 @@ html, body {
   display:flex;
   align-items:center;
 }
-
-.events-outlet {
-  height: 90vh;
-  background-color: #D9D9D9;
-  overflow-y: scroll;
-}
-
 
 .horizontal-center {
   text-align: center;
@@ -55,36 +61,4 @@ input[type="text"], textarea {
 :-moz-placeholder { /* Firefox 4 - 18 */
   color: #008CDD;
   opacity: 1;
-}
-
-.events-topbar {
-  width: 100%;
-  height: 10vh;
-  background-color: #012B4D;
-}
-
-.logo-bar {
-  padding-left: 10px;
-  padding-top: 10px;
-}
-
-.btn-new-event {
-  background-color: black;
-  color: #008CDD;
-}
-
-.btn-new-event:hover {
-  background-color: #001030;
-  color: #008CDD;
-}
-
-.new-event-name {
-  text-align: center;
-  font-weight: bold;
-  font-size: 24px;
-}
-
-.new-event-escape {
-  float: right;
-  padding-right: 10px;
 }

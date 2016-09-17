@@ -17,6 +17,19 @@
 
       <form>
         <div class="form-group">
+          {{#power-select-multiple
+            options=interests
+            selected=model.interests
+            placeholder="Select some interests"
+            onchange=(action (mut model.interests))
+            as |interest|
+          }}
+            {{interest.name}}
+          {{/power-select-multiple}}
+        </div>
+
+
+        <div class="form-group">
           {{input class="form-control" placeholder="What? (Brief tagline of event)" id="name" value=model.name}}
         </div>
 

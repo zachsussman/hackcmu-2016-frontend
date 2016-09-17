@@ -1,6 +1,6 @@
 <div class="events-list">
-  {{#each model as |e|}}
-    {{event-item event=e}}
+  {{#each model.events as |e|}}
+    {{event-item cls="col-lg-3 col-md-4 col-xs-6" event=e user=model.user}}
   {{/each}}
 </div>
 

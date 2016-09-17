@@ -1,0 +1,54 @@
+<div class="me-container">
+  <div class="me-box">
+    <div class="me-escape">
+      {{#link-to "events"}}<i class="fa fa-times fa-2x escape-white" aria-hidden="true"></i> {{/link-to}}
+    </div>
+
+    <div class="me-registered-for">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="me-registered-header">
+            Events Registered For
+          </div>
+        </div>
+      </div>
+      <div class="me-registered-box">
+        <div class="me-registered-list">
+          {{#each model.registered as |e|}}
+          <div class="row">
+            {{my-event-item cls="col-xs-12" event=e user=model.user}}
+          </div>
+          {{/each}}
+        </div>
+        <div class="me-registered-bottom">
+        </div>
+      </div>
+    </div>
+
+    <div class="me-my-events">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="me-my-header">
+            My Events
+          </div>
+        </div>
+      </div>
+      <div class="me-my-box">
+        <div class="me-my-list">
+          {{#each model.mine as |e|}}
+          <div class="row">
+            {{my-event-item cls="col-xs-12" event=e user=model.user}}
+          </div>
+          {{/each}}
+        </div>
+        <div class="me-my-bottom">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+{{outlet}}

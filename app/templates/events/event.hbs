@@ -43,8 +43,19 @@
       </div>
       <div class="row">
         <div class="col-xs-12">
+          <div class="event-detail-location">
+            Interests: {{model.interestNames}}
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
           <div class="event-detail-sign">
-            <button class="btn btn-event-detail">Sign <img src="logo white.png" height="50px"></button>
+            {{#liquid-if model.going}}
+            <button disabled="disabled" class="btn btn-event-disabled" {{action "signdown"}}>Signed <img src="down white.svg" height="50px">!</button>
+            {{else}}
+            <button class="btn btn-event-detail" {{action "signdown"}}>Sign <img src="down white.svg" height="50px"></button>
+            {{/liquid-if}}
           </div>
         </div>
       </div>

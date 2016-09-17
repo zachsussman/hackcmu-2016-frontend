@@ -9,7 +9,9 @@ Router.map(function() {
   this.route('events', function() {
     this.route('new');
     this.route('event', {path: ':id'});
+    this.route('me');
   });
+  this.route('login');
 });
 
 export default Router;
